@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    
+    <script type="text/javascript">
+      
+      function gerarFraseMotivacional(){
+
+        const frases = [
+          "Não se desanime com a derrota de hoje, porque amanhã tem mais.",
+          "De longe parece derrotado, de perto parece que está longe.",
+          "Pode sonhar! Mas saiba que os sonhos antecedem os seus fracassos.",
+          "O segredo do sucesso é fazer o contrário do que você está fazendo.",
+          "Tudo passa, até as coisas ruins vão embora para coisas terríveis chegarem.",
+          "Arrisque, tente, lute, mostre para você mesmo o quanto é incapaz.",
+          "Então sorria, você acordou mais um dia, sorria. Mesmo derrotado, você é abençoado.",
+          "O mérito da derrota é todinho seu, orgulhe-se.",
+          "A verdade dói, mas precisa ser dita: 'Não será desta vez'.",
+          "É só uma fase ruim, logo vai piorar.",
+        ]
+
+        const numeroAleatorio = Math.floor(Math.random() * 10)
+        const frase = frases[numeroAleatorio]
+
+        document.getElementById('frase').innerHTML = frase
+
+      }
+
+    </script>
+
+
+    <title>Frases motivacionais</title>
+
+  </head>
+
+  <body>
+    
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="jumbotron">
+              <h1 class="text-success display-5">Frases motivacionais</h1>
+              <hr>
+
+              <h2 class="display-4" id="frase">
+                Em busca do ótimo não se faz o bom.
+              </h2>
+
+              <hr>
+              <button type="button" 
+              class="btn btn-success btn-lg" onclick="gerarFraseMotivacional()">Nova frase</button>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
